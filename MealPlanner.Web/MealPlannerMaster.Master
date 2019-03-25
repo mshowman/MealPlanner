@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MealPlannerMaster.master.cs" Inherits="MealPlanner.Web.MealPlannerMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="topSection">
+            <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="WebForm1.aspx">Meal Tracker</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="WebForm2.aspx">Calendar Demo Page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Page 2</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-1 p-1">
+                        <button type="button" class="btn btn-primary">Sign Up</button>
+                        <button type="button" class="btn btn-secondary">Sign In</button>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="MainSection">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="bottomSection">
+            <h2 class="text-center col-12 col-md-12 col-sm-12">The Fairfield Meal Planner and Diet Tracker (c)2019</h2>
+        </div>
+    </form>
+    <script src="Scripts/popper.min.js"></script>
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+</body>
+</html>
