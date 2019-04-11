@@ -1,11 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="MealPlanner.Home" %>
+﻿<%@ Page Language="C#" Title="Home | Meal Planner" MasterPageFile="~/MealPlanner.Master"  AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="MealPlanner.Home" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<asp:Content ContentPlaceHolderID="head" runat="server">
     <title>Home | Meal Planner</title>
-    <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <style>
         .header-image {
             position: relative;
@@ -21,9 +17,10 @@
             overflow: hidden;
         }
     </style>
-</head>
-<body>
-    <form id="form1" runat="server">
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="mainContent" runat="server" >
+     <form id="form1" runat="server">
         <div>
             <div class="container-fluid header-image">
                 <asp:Image ID="imgHeader" runat="server" ImageUrl="~/Assets/header-image.jpg" CssClass="img-fluid" />
@@ -48,9 +45,8 @@
             </div>
         </div>
     </form>
-</body>
 
-<script src="Scripts/jquery-3.0.0.js"></script>
-<script src="Scripts/popper.js"></script>
-<script src="Scripts/bootstrap.min.js"></script>
-</html>
+    <script src="Scripts/jquery-3.0.0.js"></script>
+    <script src="Scripts/popper.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+</asp:Content>
