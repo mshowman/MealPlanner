@@ -50,6 +50,17 @@
             min-height: 1000px;
         }
 
+        /* Footer */
+        .footer {
+            background-color: darkslategrey;
+            color:antiquewhite;
+            min-height:200px;
+            margin-left: 200px;
+            margin-top:50px;
+            padding: 1px 16px;
+        }
+
+
         /* On screens that are less than 700px wide, make the sidebar into a topbar */
         @media screen and (max-width: 700px) {
             .sidebar {
@@ -69,6 +80,10 @@
             .main-header{
                 visibility:hidden;
             }
+
+            .footer{
+                margin-left:0px;
+            }
         }
 
         /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
@@ -79,21 +94,14 @@
             }
         }
 
-        .footer {
-            background-color: darkslategrey;
-            color:antiquewhite;
-            min-height:200px;
-            margin-left: 200px;
-            margin-top:50px;
-            padding: 1px 16px;
-        }
+        
     </style>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
 
-    <div class="page-header main-header fixed-top">
+    <div class="page-header main-header fixed-top padding-sm">
         <h1>Meal Planner</h1>
     </div>
     <div class="">
